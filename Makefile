@@ -12,3 +12,6 @@ lint:
 
 test:
 	poetry run pytest --dead-fixtures
+
+server:
+	poetry run uvicorn src.main:app --reload

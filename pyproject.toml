@@ -10,17 +10,22 @@ readme = "README.md"
 version = "0.1.0"
 
 [tool.poetry.dependencies]
-fastapi = "^0.105.0"
+fastapi = {extras = ["all"], version = "^0.105.0"}
 python = "^3.12"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.12.0"
+httpx = "^0.25.2"
 mypy = "^1.7.1"
 pymarkdownlnt = "^0.9.15"
 pytest = "^7.4.3"
 pytest-deadfixtures = "^2.2.1"
 ruff = "^0.1.8"
 toml-sort = "^0.23.1"
+
+[tool.pytest.ini_options]
+python_files = "test*.py"
+pythonpath = ". src"
 
 [tool.ruff]
 ignore = [
