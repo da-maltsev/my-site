@@ -96,7 +96,7 @@ ENV/
 .ropeproject
 
 # deployed static files folder
-src/vangus/static/*
+app/vangus/static/*
 static/*
 media/*
 
@@ -108,9 +108,9 @@ media/*
 node_modules/
 
 # vue frontend
-src/frontend/templates/frontend/index.html
-src/frontend/static/build
-src/frontend/static/js/*
+app/frontend/templates/frontend/index.html
+app/frontend/static/build
+app/frontend/static/js/*
 
 .tern-port
 

@@ -1,0 +1,88 @@
+/* Reset some default styles and apply a box-sizing border-box */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a color scheme resembling old paper for the body */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #f5f1e6; /* Light cream color resembling old paper */
+  color: #333; /* Dark text color */
+  line-height: 1.6;
+}
+
+/* Container for the entire page */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes at least the full height of the viewport */
+  align-items: center;
+  max-width: 70vw;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navigation bar styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6b5440; /* Dark tan color for the navbar */
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.nav-links {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+/* Main content styles */
+.main-content {
+  flex: 1;
+}
+
+
+footer {
+  background-color: #6b5440; /* Dark tan color for the footer */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  margin-top: auto; /* Push the footer to the bottom */
+  border-top: 1px solid #fff;
+}
+
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+
+a {
+  color: #007bff; /* Blue color for unvisited links */
+  text-decoration: none;
+}
+
+/* Global styles for visited links */
+a:visited {
+  color: #a98261; /* Lighter brown color for visited links */
+}
+
+/* Hover styles for links */
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Active styles for links (when clicked) */
+a:active {
+  color: #495057; /* Darker color for active links */
+}
