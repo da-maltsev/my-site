@@ -11,6 +11,7 @@ from core.paths import setup_path
 app = FastAPI()
 app.mount("/static", StaticFiles(directory=setup_path("static")), name="static")
 
+
 posts = [
     {"id": i, "title": f"Title {i}", "content": "asdasdasdasdasdasdad" * 100, "created": datetime.datetime.now(tz=datetime.timezone.utc)} for i in range(1, 6)
 ]  # just developing mock
