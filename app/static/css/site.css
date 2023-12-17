@@ -29,16 +29,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #6b5440; /* Dark tan color for the navbar */
   padding: 10px 20px;
   width: 100%;
 }
 
 .nav-links {
-  color: #fff;
+  color: #a98261;
   text-decoration: none;
   margin-right: 15px;
   font-weight: bold;
+  font-size: 32px;
 }
 
 /* Main content styles */
@@ -48,13 +48,11 @@ body {
 
 
 footer {
-  background-color: #6b5440; /* Dark tan color for the footer */
-  color: #fff;
+  color: #333;
   padding: 20px;
   text-align: center;
   width: 100%;
   margin-top: auto; /* Push the footer to the bottom */
-  border-top: 1px solid #fff;
 }
 
 
@@ -65,16 +63,20 @@ footer {
     max-width: 100%;
     padding: 10px;
   }
+
+  .nav-links {
+    font-size: 20px;
+  }
 }
 
 a {
-  color: #007bff; /* Blue color for unvisited links */
+  color: #a98261;
   text-decoration: none;
 }
 
 /* Global styles for visited links */
 a:visited {
-  color: #a98261; /* Lighter brown color for visited links */
+  color: #6d4f32;
 }
 
 /* Hover styles for links */
